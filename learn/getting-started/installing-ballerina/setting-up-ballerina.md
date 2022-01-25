@@ -124,14 +124,8 @@ Once you have Ballerina installed, you can use the Update Tool to update it to t
 
 >**Info:** If you want to pull a specific Ballerina version, execute the `bal dist pull <VERSION>` command (e.g., `bal dist pull slbeta3`).
 
-> **Info:** You might need to first update the Update Tool to its latest version. If you have an Update Tool version below 0.8.14, execute the `ballerina update` command or else execute the `bal update` command to do this.
-
 For more information, see [Update Tool](/learn/tooling-guide/cli-tools/update-tool/).
 
 ## Installing the VSCode Extension
 
 Ballerina provides an extension to try out its development capabilities in Visual Studio Code. For instructions on setting it up, see [Quick Start](/learn/visual-studio-code-extension/quick-start/).
-
-## What's Next?
-
-Now, that your environment for Ballerina is all set up and running, let's [write your first Ballerina program](/learn/user-guide/getting-started/writing-your-first-ballerina-program/).
