@@ -86,14 +86,14 @@ $ bal grpc --mode service --input helloworld.proto --output greeter_service/
 
 Once successfully executed, you will see the output below.
 
-```
+```bash
 Successfully extracted the library files.
 Successfully generated the Ballerina file.
 ```
 
 Once you move into the directory, you will see the following two files,
 
-```
+```bash
 greeter_service
 ├── - - -
 ├── greeter_service.bal
@@ -104,7 +104,7 @@ Here,
 - The `helloworld_pb.bal` file is the stub file. It contains classes that the client/service uses to talk to each other
 and the Ballerina types corresponding to the request and response messages.
 - The `greeter_service.bal` file is the service template file. It contains service(s) with all the remote methods
-  defined in the PROTO file.
+  defined in the `.proto` file.
 
 #### Update and run the application
 
@@ -128,7 +128,7 @@ In this code,
 - The Listener declaration creates a new gRPC listener with port 9090. The listener is the entity that listens to the
 input coming to the port and then dispatches it to the correct service(s).
 - The service declaration creates a service and attaches it to the listener. The service annotation is to create an
-  internal mapping between the service declarations and the PROTO definition. Do not change it.
+  internal mapping between the service declarations and the `.proto` definition. Do not change it.
 - The gRPC service can have one or more remote methods depending on the proto definition. Here, this service has only one
   method called `sayHello` that has the `HelloRequest` type as the request and `HelloReply` type as the response.
 
